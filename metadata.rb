@@ -7,3 +7,5 @@ long_description 'Installs/Configures game-server-cookbook'
 version          '0.1.0'
 
 depends "runit"
+depends "python"
+depends "runit"

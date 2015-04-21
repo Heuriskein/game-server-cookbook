@@ -6,6 +6,13 @@
 
 package "git"
 
+directory "/git" do
+    action :create
+    owner "root"
+    group "root"
+    mode "755"
+end
+
 git "/git/viking-logharvester" do
     repository "https://github.com/Heuriskein/viking-logharvester.git"
     action :sync

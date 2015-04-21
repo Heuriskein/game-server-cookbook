@@ -10,6 +10,7 @@ describe "game-server-cookbook::logharvester" do
     end
 
     it 'syncs logharvester' do
+        expect(chef_run).to create_directory("/git")
         expect(chef_run).to sync_git("/git/viking-logharvester")
     end
 
